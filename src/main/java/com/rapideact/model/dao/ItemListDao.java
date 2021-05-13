@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import com.rapideact.model.entity.ItemDto;
 
-public class ItemDao {
+public class ItemListDao {
 
 	private static String dbURL = "jdbc:mariadb://localhost:3306/furuki";
 

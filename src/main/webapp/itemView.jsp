@@ -24,7 +24,7 @@ ArrayList<ItemDto> list = (ArrayList<ItemDto>) request.getAttribute("list");
 	<hr>
 
 	
-<form method="post" action="/ItemManager/ItemController">
+<form method="post" action="/ItemManager/ItemCrudServlet">
 		<input type="submit" name="add" value="新規登録">
 	</form>
 
@@ -56,9 +56,9 @@ ArrayList<ItemDto> list = (ArrayList<ItemDto>) request.getAttribute("list");
 			<td><%=ud.getRelease_date()%></td>
 			<td><%=ud.getComment()%></td>
 
-			<td><form method="post" action="/ItemManager/ItemController">
-					<input type="submit" name="upd" value="更新"> <input
-						type="submit" name="del" value="削除">
+			<td><form method="post" action="/ItemManager/ItemCrudServlet?id="+ <% ud.getItem_id()%> + "\">
+					<input type="submit" name="upd" value="更新">
+					<input type="submit" name="del" value="削除">
 				</form></td>
 
 		</tr>

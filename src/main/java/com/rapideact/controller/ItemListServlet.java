@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.rapideact.model.dao.ItemDao;
+import com.rapideact.model.dao.ItemListDao;
 import com.rapideact.model.entity.ItemDto;
 
 @WebServlet("/ItemListServlet")
@@ -22,7 +22,7 @@ public class ItemListServlet extends HttpServlet {
 	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
-		ItemDao dao = new ItemDao();
+		ItemListDao dao = new ItemListDao();
 		ArrayList<ItemDto> list = dao.getItemList();
 		request.setAttribute("list", list);
 		request.setAttribute("search_word", "");

@@ -10,10 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet("/UserLogout")
-public class UserLogout extends HttpServlet {
+public class UserLogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	public UserLogout() {
+	public UserLogoutServlet() {
 		super();
 	}
 	

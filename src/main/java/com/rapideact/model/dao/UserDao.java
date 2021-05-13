@@ -15,6 +15,7 @@ public class UserDao {
 	private static String user = "furuki";
 
 	private static String password = "furuki";
+	
 
 	public UserDto findUser(String id, String pass) {
 		UserDto imUser = new UserDto();
